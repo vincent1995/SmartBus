@@ -7,17 +7,14 @@ public class DriverModel implements DriverContract.Model{
     }
     @Override
     public void requestNewData() {
-        data.value ++;
     }
 
     @Override
     public void connectServer() {
-        data.value = 0;
     }
 
     @Override
     public void disconnectServer() {
-        data.value = 0;
     }
 
     @Override
