@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SmartBus</string>
+    <string name="server_ip">x.x.x.x</string>
+    <string name="server_port">8080</string>
 </resources>
