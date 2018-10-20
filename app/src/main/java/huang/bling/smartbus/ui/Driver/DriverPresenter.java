@@ -23,6 +23,7 @@ public class DriverPresenter  implements DriverContract.Presenter{
                 mView.updateUi(data);
             }
         };
+        timer = null;
     }
 
     @Override
@@ -87,9 +88,11 @@ public class DriverPresenter  implements DriverContract.Presenter{
     }
 
     private void setTimerTask(){
-        TimerTask task = new DriverTimerTask();
-        timer = new Timer();
-        timer.schedule(task,0, Constant.DriverUiUpdateInterval);
+        if(timer == null){
+            TimerTask task = new DriverTimerTask();
+            timer = new Timer();
+            timer.schedule(task,0, Constant.DriverUiUpdateInterval);
+        }
     }
     private void cancelTimerTask(){
         if(timer != null){
@@ -102,7 +105,7 @@ public class DriverPresenter  implements DriverContract.Presenter{
         @Override
         public void run() {
             mModel.requestNewData();
-            updateHandler.sendMessage(null);
+            updateHandler.sendMessage(new Message());
         }
     }
 }
