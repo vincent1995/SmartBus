@@ -14,15 +14,10 @@
     <!--侧边栏-->
     <string name="navigation_drawer_open">打开导航栏</string>
     <string name="navigation_drawer_close">关闭导航栏</string>
-    <string name="nav_call">普通叫车</string>
-    <string name="nav_safeCall">安全叫车</string>
-    <string name="nav_order">订单列表</string>
-    <string name="nav_address">常用地址</string>
-    <string name="nav_callCenter">电话叫车</string>
-    <string name="nav_about">关于我们</string>
-    <string name="nav_suggest">意见反馈</string>
-    <string name="nav_update">版本更新</string>
-    <string name="nav_appoint">预约叫车</string>
+    <string name="nav_start">Start</string>
+    <string name="nav_end">Start</string>
+    <string name="nav_about">About us</string>
+
     <!--首页地图页-->
     <string name="input_getOnAddress">Please enter your stop!</string>
     <string name="input_getOffAddress">Please enter your destination!</string>
